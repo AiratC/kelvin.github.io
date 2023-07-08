@@ -1,0 +1,50 @@
+@media (max-width: 1110px) {
+
+    .nav-list {
+        display: none;
+    }
+
+
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 46px 30px;
+        display: block;
+        z-index: 9;
+    
+        background-color: #FFF;
+
+    }
+
+    .nav-list a {
+        color: #828282;
+        font-size: 34px;
+        font-weight: 600;
+        transition: color 0.3s ease-in;
+    }
+
+    .nav-list a:hover {
+        color: black;
+    }
+
+    .nav-button {
+        position: absolute;
+        z-index: 9;
+        top: 30;
+        right: 50;
+    }
+
+    .nav.open .nav-button {
+        position: fixed;
+    }
+}
+
+@media (min-width: 1111px) {
+
+    .nav-button {
+        display: none;
+    }
+}
